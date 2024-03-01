@@ -117,8 +117,6 @@ class MainWindow(Wigdets.QMainWindow):
             else:
                 break        
 
-
-
     def setInitFrame(self):
         self.video.set(cv2.CAP_PROP_POS_FRAMES ,self.ui.initFrameSpinBox.value() )   # Se establece la posicion del video en el Frame Inicial
         self.ui.statusbar.showMessage(f'Frame Init has been established to frame No.:{int(self.video.get(cv2.CAP_PROP_POS_FRAMES))}')  
